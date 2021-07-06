@@ -5,8 +5,8 @@ logo: /static/img/avatar.png
 github: https://github.com/codeasashu
 about: To live in the rabbit hole, you gotta learn the rabbit hole.
 
-baseurl: ""
-url: ""
+baseurl: "/vtuberdictionary"
+url: "madekuji.github.io/vtuberdictionary"
 
 allowsearch: true
 
