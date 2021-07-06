@@ -15,7 +15,13 @@ gem "minima", "~> 2.5"
 gem "github-pages", "~> 215", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'jekyll'
   gem "jekyll-feed", "~> 0.12"
+  gem 'jekyll-paginate'
+  gem 'jekyll-gist'
+  gem 'jekyll-watch'
+  gem 'kramdown'
+  gem 'rouge'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -28,10 +34,3 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-group :jekyll_plugins do
-    gem 'jekyll-paginate'
-    gem 'jekyll-gist'
-    gem 'jekyll-watch'
-    gem 'kramdown'
-    gem 'rouge'
-  end
