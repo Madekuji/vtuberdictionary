@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "gebokawa"
+title: gebokawa"
 description: 'Can effectively be translated as "Disgustingly cute" or "so cute that I want to vomit."'
 date:   2017-11-12 17:46:41 -0300
 categories: start blog
