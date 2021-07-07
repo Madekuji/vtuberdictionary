@@ -1,28 +1,32 @@
-title: VTuber Dictionary
-description: To live in the rabbit hole, you gotta learn the rabbit hole.
-author: VTuber Dictionary
-logo: /static/img/avatar.png
-github: https://github.com/codeasashu
-about: To live in the rabbit hole, you gotta learn the rabbit hole.
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
+title: "VTuber Dictionary"
+name: "VTuber Dictionary"
+email: gusquinalha@gmail.com
+description: "Simple and flexible Jekyll theme for help center."
+menutitlebold: "VTuber Dictionary"
+menutitlereg: ""
+caption: "To live in the rabbit hole, you must learn the rabbit hole."
 baseurl: "/vtuberdictionary"
 url: "madekuji.github.io/vtuberdictionary"
+twitter_username: "gustavoquinalha"
+github_username:  "gustavoquinalha"
+color_theme:  "#EE4F87"
+color_text:  "#fff"
+language:  "en"
 
-allowsearch: true
-
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
-
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
-
-
-enableTags: true
-tagarray: []
-
-paginate: 20
-per_page: 20
-paginate_path: "/vtuberdictionary/page:num/"
+# Build settings
 markdown: kramdown
-plugins: [jekyll-paginate, jekyll-gist]
+permalink: /:title/
+plugins: [jekyll-paginate]
+paginate: 5
+
+# Plugins
+plugins_dir:
+  - jekyll-admin
