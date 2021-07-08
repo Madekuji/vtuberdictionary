@@ -68,6 +68,11 @@ layout: default
               </div>
               {% endif %}
             </span>
+            {% if x.imageembed %}
+              <div style="text-align: center; margin-top: 1rem;">
+                <img src="{{ x.imageembed }}" width="300">
+              </div>
+            {% endif %}
             {% if x.youtubevideo %}
               <div style="text-align: center; margin-top: 1rem;">
                 <iframe width="300" height="169" style="border:0;" src="https://www.youtube.com/embed/{{ x.youtubevideo }}">
