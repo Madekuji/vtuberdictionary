@@ -6,6 +6,8 @@ VTuber Dictionary is a website that tries to compile all the common and not-so-c
 
 The dictionary is developed by **[Madekuji-san](https://madekuji.github.io/)**.
 
+Favicon by **[Freepik](https://www.flaticon.com/free-icon/book_4052268)**.
+
 Original site design by **[gustavoquinalha](https://github.com/gustavoquinalha/jekyll-help-center-theme)**.
 
 Powered by **[Jekyll](https://jekyllrb.com/)**.
