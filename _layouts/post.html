@@ -35,10 +35,10 @@ layout: default
             <br />
             {% if x.japanese %}
             {{x.japanese}}
-            /
+             • 
             {% endif %}
             {% if x.ipa %}
-            {{x.ipa}}
+            \ {{x.ipa}} \
             {% endif %}
             </p>
             
@@ -52,17 +52,17 @@ layout: default
               <b>Example sentences:</b>
                 {% if x.example1 %}
                 <div>
-                ▸ {{x.example1}}
+                ▸ &quot;{{x.example1}}&quot;
                 </div>
                 {% endif %}
                 {% if x.example2 %}
                 <div>
-                ▸ {{x.example2}}
+                ▸ &quot;{{x.example2}}&quot;
                 </div>
                 {% endif %}
                 {% if x.example3 %}
                 <div>
-                ▸ {{x.example3}}
+                ▸ &quot;{{x.example3}}&quot;
                 </div>
                 {% endif %}
               </div>
@@ -79,6 +79,13 @@ layout: default
                 </iframe>
               </div>
             {% endif %}
+            {% if x.twitterembed %}
+              <div style="margin-top: 1rem;">
+                <center>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="{{ x.twitterembed }}?ref_src=twsrc%5Etfw"></a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </center>
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -91,4 +98,7 @@ layout: default
 
     <!-- content -->
   </article>
+  <div class="" style="margin-top: 3rem; margin-bottom: 3rem;" data-aos="fade-right" data-aos-delay="" data-aos-offset="0">
+    <a href="https://github.com/Madekuji/vtuberdictionary/issues/new?assignees=Madekuji&labels=entry&template=dictionary-entry.md&title=%5BENTRY%5D+%28insert+word+or+term+here%29" class="button" target="_blank">Add or update a word or term...</a>
+  </div>
 </div>

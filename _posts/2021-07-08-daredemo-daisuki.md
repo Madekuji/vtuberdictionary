@@ -37,5 +37,3 @@ entries:
 - <http://stage48.net/wiki/index.php/Glossary#DD_and_MD>
 - <https://en.wikipedia.org/wiki/Million_Doll>
 - <https://hololive.wiki/wiki/Glossary>
-
-<br />
