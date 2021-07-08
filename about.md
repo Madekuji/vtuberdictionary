@@ -11,3 +11,5 @@ Favicon by **[Freepik](https://www.flaticon.com/free-icon/book_4052268)**.
 Original site design by **[gustavoquinalha](https://github.com/gustavoquinalha/jekyll-help-center-theme)**.
 
 Powered by **[Jekyll](https://jekyllrb.com/)**.
+
+The main repository can be found here: **<https://github.com/Madekuji/vtuberdictionary>**
