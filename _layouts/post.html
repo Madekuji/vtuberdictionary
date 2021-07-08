@@ -47,7 +47,33 @@ layout: default
           <div class="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
             <span class="list-post-description">
               {{x.definition}}
+              {% if x.example1 or x.example2 or x.example3 %}
+              <div style="margin-top: 1rem;">
+              <b>Example sentences:</b>
+                {% if x.example1 %}
+                <div>
+                ▸ {{x.example1}}
+                </div>
+                {% endif %}
+                {% if x.example2 %}
+                <div>
+                ▸ {{x.example2}}
+                </div>
+                {% endif %}
+                {% if x.example3 %}
+                <div>
+                ▸ {{x.example3}}
+                </div>
+                {% endif %}
+              </div>
+              {% endif %}
             </span>
+            {% if x.youtubevideo %}
+              <div style="text-align: center; margin-top: 1rem;">
+                <iframe width="300" height="169" style="border:0;" src="https://www.youtube.com/embed/{{ x.youtubevideo }}">
+                </iframe>
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>

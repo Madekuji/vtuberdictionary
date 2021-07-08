@@ -15,7 +15,7 @@ entries:
     <br />
     <br />
     <center>
-    <iframe width="480" height="270" style="border:0;" src="https://www.youtube.com/embed/NfPS08sQSEQ">
+    <iframe width="360" height="203" style="border:0;" src="https://www.youtube.com/embed/NfPS08sQSEQ">
     </iframe>
     </center>'
     japanese: 'げぼかわ'
