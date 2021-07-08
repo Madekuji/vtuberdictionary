@@ -13,6 +13,9 @@ For making new dictionary entries or updating existing ones. Please use one of t
 ### Term:
 *(Insert word, phrase, or term here.)*
 
+### Lexical category:
+*(Is the word a noun, verb, adjective, or etc.?)*
+
 ### Japanese:
 *(If the term is of Japanese origin, please enter the original writing in kanji and/or kana.)*
 
