@@ -1,9 +1,9 @@
 ---
 title: daredemo daisuki
 layout: post
-description: Translates to "would like anyone" or "I love anyone." In the VTuber landscape,
+description: Translates to “would like anyone” or “I love anyone.” In the VTuber landscape,
   a daredemo daisuki is someone who may have one or two favorite VTubers but is completely
-  open to and may regularly watch others. Can be abbreviated as "DD."
+  open to and may regularly watch others. Can be abbreviated as “DD.”
 categories:
 - start
 - blog
