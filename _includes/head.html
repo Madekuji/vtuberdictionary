@@ -19,12 +19,12 @@
   <meta name="theme-color" content="#ee4f87">
 
   <!-- facebook -->
-  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | capitalize }} | Definition | {{ site.name }}{% else %}{{ site.name }}{% endif %}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}" />
-  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
-  <meta property="og:image" content="{{site.url}}{{site.baseurl}}/assets/img/image.png" />
+  <meta property="og:image" content="{% if page.socimage %}{{ site.baseurl }}/pageimg/{{ page.socimage }}{% else %}{{ site.baseurl }}/{{ site.socimage }}{% endif %}" />
   <meta property="fb:app_id" content="1154262757941899" />
   <meta property="fb:admins" content="100002787447461" />
   <meta content="#ee4f87" data-react-helmet="true" name="theme-color" />

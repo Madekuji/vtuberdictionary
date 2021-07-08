@@ -18,6 +18,7 @@ url: "madekuji.github.io/vtuberdictionary"
 color_theme:  "#EE4F87"
 color_text:  "#fff"
 language:  "en"
+socimage: "thumbnail.png"
 
 # Build settings
 markdown: kramdown

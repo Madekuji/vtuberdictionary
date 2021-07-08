@@ -8,6 +8,7 @@ categories:
 - start
 - blog
 icon: book
+socimage: "daredemo-daisuki.png"
 entries:
 - entry: daredemo daisuki
   lexicalcategory: noun
