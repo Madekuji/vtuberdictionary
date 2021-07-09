@@ -27,14 +27,13 @@ For making new dictionary entries or updating existing ones. Please use one of t
 
 
 ### Definition:
-*(Insert definition here)*
-
-
-### Sources:
-*(Insert any sources you used to create this definition.)*
+*(Insert definition here.)*
 
 
 ### Additional media:
-*(Insert any additional media or materials such as YouTube videos or tweets that may be beneficial to explaining the term.)*
+*(Insert any additional media or materials such as images, YouTube videos or tweets that may be beneficial to explaining the term.)*
 
+
+### Sources:
+*(Insert any links to sources you used to create this definition.)*
 
