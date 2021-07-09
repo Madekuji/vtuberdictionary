@@ -49,6 +49,44 @@ a.button:hover {
   background-color: #D7477A;
 }
 
+button {
+  background-color: #EE4F87; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #D7477A;
+}
+
+#facebook {
+  background-color: #1777F2;
+}
+#facebook:hover {
+  background-color: #115ec4;
+}
+
+#twitter {
+  background-color: #1D9BF0;
+}
+#twitter:hover {
+  background-color: #1A91DA;
+}
+
+#link {
+  background-color: #757577;
+}
+#link:hover {
+  background-color: #59595a;
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,

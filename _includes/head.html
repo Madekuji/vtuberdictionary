@@ -41,4 +41,15 @@
   <meta itemprop="image" content="{% if page.socimage %}{{ site.baseurl }}/pageimg/{{ page.socimage }}{% else %}{{ site.baseurl }}/{{ site.socimage }}{% endif %}">
   
   <!-- twitter -->
+
+  <script>
+    function copyToClipboard(text) {
+    var inputc = document.body.appendChild(document.createElement("input"));
+    inputc.value = window.location.href;
+    inputc.focus();
+    inputc.select();
+    document.execCommand('copy');
+    inputc.parentNode.removeChild(inputc);
+    }
+    </script>
 </head>
