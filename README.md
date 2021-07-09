@@ -12,4 +12,4 @@ Original site design by **[gustavoquinalha](https://github.com/gustavoquinalha/j
 
 Powered by **[Jekyll](https://jekyllrb.com/)**.
 
-**[You may add or update words or terms and their definitions by clicking here.](https://github.com/Madekuji/vtuberdictionary/issues/new?assignees=Madekuji&labels=entry&template=dictionary-entry.md&title=%5BENTRY%5D+%28insert+word+or+term+here%29)**
+**[You may add or update words or terms and their definitions by clicking here.](https://forms.gle/evPWwvD3pHs3NvG18)**
