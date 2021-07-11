@@ -14,6 +14,7 @@ entries:
   lexicalcategory: noun
   japanese: 誰でも大好き
   ipa: daɾedemodaisɯkʲi
+  audio: daredemo-daisuki.mp3
   definition: Translates to "would like anyone" or "I love anyone." This is an idol/wota
     term that denotes a person being a fan who can like anyone in a certain group,
     as opposed to only one person. In the VTuber landscape, a daredemo daisuki is
