@@ -30,6 +30,10 @@ For making new dictionary entries or updating existing ones. Please use one of t
 *(Insert definition here.)*
 
 
+### Sample sentences:
+*(Insert different sentences that use the term here.)*
+
+
 ### Additional media:
 *(Insert any additional media or materials such as images, YouTube videos or tweets that may be beneficial to explaining the term.)*
 
