@@ -41,3 +41,15 @@ For making new dictionary entries or updating existing ones. Please use one of t
 ### Sources:
 *(Insert any links to sources you used to create this definition.)*
 
+
+---
+For developers to track progress:
+- [ ] Term
+- [ ] Lexical category
+- [ ] IPA
+- [ ] Definition
+- [ ] Example sentences
+- [ ] Additional media
+- [ ] Sources
+- [ ] Recorded speech
+- [ ] Add post
