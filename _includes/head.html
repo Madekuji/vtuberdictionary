@@ -24,7 +24,7 @@
   <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
-  <meta property="og:image" content="{% if page.socimage %}{{ site.baseurl }}/pageimg/{{ page.socimage }}{% else %}{{ site.baseurl }}/{{ site.socimage }}{% endif %}" />
+  <meta property="og:image" content="{% if page.layout == 'post' %}https://irlperet.sirv.com/Images/template.png?text={{ page.title }}&text.font.size=120&text.color=FFFFFF&text.position.gravity=center&text.position.y=-45&text.font.family=Source%20Sans%20Pro&text.font.style=normal&text.font.weight=700{% else %}{{ site.baseurl }}/{{ site.socimage }}{% endif %}" />
   <meta property="fb:app_id" content="1154262757941899" />
   <meta property="fb:admins" content="100002787447461" />
   <meta content="#ee4f87" data-react-helmet="true" name="theme-color" />
@@ -35,10 +35,10 @@
   <meta name="twitter:title" content="{% if page.title %}{{ page.title | capitalize }} | Definition | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:creator" content="{{ site.twitter_username }}">
-  <meta name="twitter:image" content="{% if page.socimage %}{{ site.siteurl }}/pageimg/{{ page.socimage }}{% else %}{{ site.siteurl }}/{{ site.socimage }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.layout == 'post' %}https://irlperet.sirv.com/Images/template.png?text={{ page.title }}&text.font.size=120&text.color=FFFFFF&text.position.gravity=center&text.position.y=-45&text.font.family=Source%20Sans%20Pro&text.font.style=normal&text.font.weight=700{% else %}{{ site.siteurl }}/{{ site.socimage }}{% endif %}">
   <meta itemprop="name" content="{% if page.title %}{{ page.title | capitalize }} | Definition | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
   <meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta itemprop="image" content="{% if page.socimage %}{{ site.baseurl }}/pageimg/{{ page.socimage }}{% else %}{{ site.baseurl }}/{{ site.socimage }}{% endif %}">
+  <meta itemprop="image" content="{% if page.layout == 'post' %}https://irlperet.sirv.com/Images/template.png?text={{ page.title }}&text.font.size=120&text.color=FFFFFF&text.position.gravity=center&text.position.y=-45&text.font.family=Source%20Sans%20Pro&text.font.style=normal&text.font.weight=700{% else %}{{ site.siteurl }}/{{ site.socimage }}{% endif %}">
   
   <!-- twitter -->
 
