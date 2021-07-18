@@ -19,6 +19,7 @@ color_theme:  "#EE4F87"
 color_text:  "#fff"
 language:  "en"
 socimage: "thumbnail.png"
+twitter_username: VTDictionary
 
 # Build settings
 markdown: kramdown
