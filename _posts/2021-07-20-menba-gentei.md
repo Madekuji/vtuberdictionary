@@ -1,7 +1,7 @@
 ---
 title: menba gentei
 layout: post
-description: Translated as "members-only," signifying content exclusive to the VTuber's
+description: Translated as “members-only,” signifying content exclusive to the VTuber's
   paid members. Commonly shortened as メン限 (mengen).
 categories:
 - start
