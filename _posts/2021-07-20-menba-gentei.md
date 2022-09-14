@@ -29,8 +29,8 @@ entries:
   twitterembed: 
   customcode:
 ---
-
-#### ⚠ Because this is originally a Japanese term and not considered slang, we would advise not using this word in English. Instead, refer to its translation "members-only" for clarity.
+> warning ""
+> Because this is originally a Japanese term and not considered slang, we would advise not using this word in English. Instead, refer to its translation "members-only" for clarity.
 <br />
 
 #### Sources:

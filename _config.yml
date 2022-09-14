@@ -25,7 +25,9 @@ google_analytics: G-B11B4KPP0L
 # Build settings
 markdown: kramdown
 permalink: /:title/
-plugins: [jekyll-paginate]
+plugins:
+  - premonition
+  - jekyll-paginate
 paginate: 5
 
 # Plugins
