@@ -31,7 +31,6 @@ entries:
 ---
 > warning ""
 > Because this is originally a Japanese term and not considered slang, we would advise not using this word in English. Instead, refer to its translation "members-only" for clarity.
-<br />
 
 #### Sources:
 - <https://www.reddit.com/r/Hololive/comments/icgxaq/a_guide_to_basic_written_hololive_japanese/>
