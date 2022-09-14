@@ -95,6 +95,7 @@ GEM
     support-for (1.0.7)
       sass (~> 3.3)
     tilt (2.0.10)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -112,6 +113,7 @@ DEPENDENCIES
   kramdown-parser-gfm
   premonition
   support-for
+  wdm (~> 0.1.0)
 
 BUNDLED WITH
    1.17.2
