@@ -10,4 +10,5 @@ group :jekyll_plugins do
   gem 'jekyll-livereload'
   gem "kramdown-parser-gfm"
   gem "premonition"
+  gem 'jekyll-contentblocks'
  end

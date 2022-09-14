@@ -28,6 +28,7 @@ permalink: /:title/
 plugins:
   - premonition
   - jekyll-paginate
+  - jekyll-contentblocks
 paginate: 5
 
 # Plugins
