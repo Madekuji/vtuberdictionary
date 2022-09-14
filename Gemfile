@@ -9,4 +9,5 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-livereload'
   gem "kramdown-parser-gfm"
+  gem "premonition"
  end
