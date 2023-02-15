@@ -13,6 +13,9 @@ entries:
 - entry: daredemo daisuki
   lexicalcategory: noun
   japanese: 誰でも大好き
+  furiganatype: B
+  furiganatext: 誰,でも,大,好,き
+  furiganacontent: だれ,,だい,す,
   ipa: daɾedemodaisɯkʲi
   audio: daredemo-daisuki.mp3
   definition: Translates to "would like anyone" or "I love anyone." This is an idol/wota
