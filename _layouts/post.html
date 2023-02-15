@@ -3,6 +3,25 @@ layout: default
 ---
 {% include minutes-to-read.html %}
 
+<header>
+  <div class="header container align-items-center justify-content-center header-post">
+    <div class="header--block size margin container column">
+      <div class="container column position-search">
+        <div class="header--block--input search-container-post" data-aos="fade-up" data-aos-delay="" data-aos-offset="0" id="search-container">
+          <div class="header--block--input--icon">
+            <!-- <img src="{{ site.baseurl }}/assets/img/icons/search-input.svg" width="30" alt=""> -->
+            <span class="feather-icon icon-search"></span>
+          </div>
+          <input class="input-search" type="text" name="" value="" placeholder="Search for any word or term..." id="search-input">
+        </div>
+        <div class="header--block--result header--block--result--post">
+          <ul id="results-container"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
 <!-- breadcrumbs -->
 <div class="size margin" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0">
   {% include breadcrumbs.html path=page.path title=page.title %}
@@ -20,7 +39,6 @@ layout: default
 
     <!-- posts -->
     <div class="margin-top-20 margin-bottom-50">
-      {{ page.other_section | markdownify }}
       {% for x in page.entries %}
       <div class="list-item-2 container wrap-reverse align-items-end justify-content-center" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0">
         <div class="flex-basis-400 flex-grow-5">

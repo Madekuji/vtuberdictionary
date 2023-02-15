@@ -55,8 +55,17 @@
         font-size: 16px;
         background: transparent;
       }
+
+      
+    }
+    .search-container-post {
+      margin-top: 0px !important
     }
   }
+}
+
+.header-post {
+  min-height: 100px;
 }
 
 .position-search {
@@ -73,20 +82,25 @@
   border-radius: 4px;
     ul {
       list-style: none;
-      li {
-        border-bottom: 1px solid #ddd;
-        border-left: 1px solid #ddd;
-        border-right: 1px solid #ddd;
-        padding: 10px;
-        box-sizing: border-box;
-        &:first-child {
-          border-top: 1px solid #ddd;
+      a {
+        &:hover {
+          color: $colortheme;
         }
-          a {
-            &:hover {
-              color: $colortheme;
-            }
+      
+        li {
+          border-bottom: 1px solid #ddd;
+          border-left: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          padding: 10px;
+          box-sizing: border-box;
+          &:first-child {
+            border-top: 1px solid #ddd;
           }
+        }
       }
     }
+}
+
+.header--block--result--post {
+  top: 60px;
 }
