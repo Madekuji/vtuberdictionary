@@ -53,7 +53,18 @@ layout: default
             {% endif %}
             <br />
             {% if x.japanese %}
-            {{x.japanese}}
+              {% if x.furiganacontent %}
+                {% capture furiganacodetext %}
+                {{x.furiganatext}}
+                {% endcapture %}
+                {% capture furiganacodecontent %}
+                {{x.furiganacontent}}
+                {% endcapture %}
+                {% capture furiganacodetype %}{{x.furiganatype}}{% endcapture %}
+                {% include furigana.html text=furiganacodetext furigana=furiganacodecontent type=furiganacodetype %}
+              {% else %}
+                {{x.japanese}}
+              {% endif %}
              • 
             {% endif %}
             {% if x.ipa %}

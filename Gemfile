@@ -13,4 +13,5 @@ group :jekyll_plugins do
   gem "kramdown-parser-gfm"
   gem "premonition"
   gem 'jekyll-contentblocks'
+  gem 'jekyll-liquify'
  end

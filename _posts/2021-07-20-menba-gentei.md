@@ -7,11 +7,15 @@ categories:
 - start
 - blog
 icon: book
+furigana: true
 socimage: null
 entries:
 - entry: menba gentei
   lexicalcategory: adjective
   japanese: メンバー限定
+  furiganatype: B
+  furiganatext: メンバー,限,定
+  furiganacontent: ',げん,てい'
   ipa: meNbaːgeNtei
   audio: menba-gentei.mp3
   definition: Translated as "members-only," signifying content exclusive to the VTuber's

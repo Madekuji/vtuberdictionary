@@ -29,6 +29,7 @@ plugins:
   - premonition
   - jekyll-paginate
   - jekyll-contentblocks
+  - jekyll-liquify
 paginate: 5
 
 # Plugins
