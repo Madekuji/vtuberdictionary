@@ -37,7 +37,7 @@ entries:
 ---
 
 #### Sources:
-- <https://allthefeel.wordpress.com/2016/02/29/wota-terminology/>
-- <http://stage48.net/wiki/index.php/Glossary#DD_and_MD>
-- <https://en.wikipedia.org/wiki/Million_Doll>
-- <https://hololive.wiki/wiki/Glossary>
+- ALL THE FEEL - [Wota Terminology](https://allthefeel.wordpress.com/2016/02/29/wota-terminology/)
+- Wiki48 - [Glossary](http://stage48.net/wiki/index.php/Glossary#DD_and_MD)
+- Wikipedia - [Million Doll](https://en.wikipedia.org/wiki/Million_Doll)
+- Hololive Fan Wiki - [Glossary](https://hololive.wiki/wiki/Glossary)
