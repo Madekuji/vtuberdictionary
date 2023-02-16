@@ -37,5 +37,5 @@ entries:
 > Because this is originally a Japanese term and not considered slang, we would advise not using this word in English. Instead, refer to its translation "members-only" for clarity.
 
 #### Sources:
-- <https://www.reddit.com/r/Hololive/comments/icgxaq/a_guide_to_basic_written_hololive_japanese/>
-- <https://hololive.wiki/wiki/Glossary>
+- Reddit - [r/Hololive - A guide to basic written Hololive Japanese](https://www.reddit.com/r/Hololive/comments/icgxaq/a_guide_to_basic_written_hololive_japanese/)
+- Hololive Fan Wiki - [Glossary](https://hololive.wiki/wiki/Glossary)
