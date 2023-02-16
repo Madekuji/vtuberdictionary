@@ -33,6 +33,16 @@ a {
   transition: .3s;
 }
 
+article a {
+  color: #EE4F87;
+  text-decoration: underline;
+}
+
+#audioButton:hover {
+  fill: #EE4F87;
+}
+
+
 a.button {
   background-color: #EE4F87; /* Green */
   border: none;
