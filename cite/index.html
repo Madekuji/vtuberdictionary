@@ -1,0 +1,217 @@
+---
+layout: blank
+---
+<html>
+<head>
+  <title>VTD Citation</title>
+      <meta charset="utf-8" />
+      <meta name="description" content="Citation machine for VTuber Dictionary">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html-duration-picker@latest/dist/html-duration-picker.min.js"></script>
+  <script>
+    function extractTwitterHandle(url) {
+      if (!url) return null;
+      const match = url.match(/^https?:\/\/(www\.)?twitter.com\/@?(?<handle>\w+)/);
+      return match?.groups?.handle ? `@${match.groups.handle}` : null;
+    }
+      function authenticate() {
+        return gapi.auth2.getAuthInstance()
+            .signIn({scope: "https://www.googleapis.com/auth/youtube.readonly"})
+            .then(function() { console.log("Sign-in successful"); },
+                  function(err) { console.error("Error signing in", err); });
+      }
+      function loadClient() {
+        gapi.client.setApiKey("AIzaSyARFohjktdlwjxWGw_BgxWX_j0SfeEDJxY");
+        return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+            .then(function() { console.log("GAPI client loaded for API"); },
+                  function(err) { console.error("Error loading GAPI client for API", err); });
+      }
+      function cite(){
+        var link = document.getElementById('link').value;
+        var ogappID = document.getElementById('ogappID').value;
+        if(document.getElementById("inputWebsite").checked == true){
+          var linkURI = encodeURIComponent(link);
+          console.log(link);
+          console.log(linkURI);
+          $.ajax('https://opengraph.io/api/1.1/site/'+ linkURI + '?accept_lang=auto&app_id='+ogappID)
+          .done(function(data){
+            console.log(data);
+            var sitename = data.hybridGraph.site_name;
+            var title = data.hybridGraph.title;
+            console.log(sitename);
+            console.log(title);
+            var result = sitename + " - [" + title + "]("+link+")";
+            document.getElementById('result').innerHTML = result;
+          });
+        }
+        if(document.getElementById("inputTwitter").checked == true){
+          title = extractTwitterHandle(link)
+          var result = "Twitter - [" + title + "]("+link+")";
+            document.getElementById('result').innerHTML = result;
+        }
+        if(document.getElementById("inputYT").checked == true){
+          if(link.includes("youtu.be"))
+          {
+            var YT_ID = link.split('/')[3];
+          }
+          else if(link.includes("youtube.com"))
+          {
+            var YT_ID = link.split('=')[1];
+          }
+          else
+          {
+            var YT_ID = link
+          }
+          return gapi.client.youtube.videos.list({
+        "part": [
+          "snippet"
+        ],
+        "id": [
+          YT_ID
+        ],
+        "hl": [
+          "en_US"
+        ]
+      })
+          .then(function(response) {
+                  // Handle the results here (response.result has the parsed body).
+                  console.log("Response", response);
+                  var title = response.result.items[0].snippet.localized.title;
+                  var result = "YouTube - [" + title + "]("+link+")";
+                  document.getElementById('result').innerHTML = result;
+                },
+                function(err) { console.error("Execute error", err); });
+        }
+        if(document.getElementById("inputJisho").checked == true){
+          var title = decodeURIComponent(link.split('/')[4]);
+          var result = "Jisho - [" + title + "]("+link+")";
+          document.getElementById('result').innerHTML = result;
+        }
+      }
+      function copy(){
+      document.querySelector("#result").select();
+      document.execCommand('copy');
+    }
+    gapi.load("client:auth2", function() {
+      gapi.auth2.init({client_id: "504205848333-roqj4kijfbba2t0dad71hmj7emd72mf6.apps.googleusercontent.com"});
+      
+    });
+  </script>
+  <style>
+    @media screen and (min-width: 601px) {
+      .main-div{
+        width: 550px;
+        margin: 20px auto;
+      }
+      .btn {
+      font-size: 1rem;
+      width: 100%
+      }
+      .form-control{
+        font-size: 1rem;
+      }
+      .logo {
+        padding: 3rem;
+      }
+      .logo-img{
+        width: 40%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .main-div{
+        width: 100%;
+      }
+      .btn {
+      font-size: 1rem;
+      width: 100%;
+      }
+      .form-control{
+        font-size: 1rem;
+      }
+      .logo {
+        padding: 2rem;
+      }
+      .logo-img{
+        width: 60%;
+      }
+    }
+    .main-text{
+        text-align: center;
+    }
+    .tab-content{
+      padding:1rem;
+      border: 1px solid #DEE2E6;
+      border-radius: 0px 0px 5px 5px;
+    }
+    .row{
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body onload="loadClient()">
+  <div class="main-div">
+    <!--HEADER-->
+    <div class="main-text">
+        <h1 style="padding-top: 0.5rem;">
+            VTuber Dictionary Citation
+        </h1>
+        <p>
+
+        </p>
+    </div>
+
+    <!--TAB CONTENT-->
+    <div class="tab-content" id="myTabContent">
+      <!--WEBSITE-->
+      <div class="tab-pane fade show active" id="hardsubber" role="tabpanel" aria-labelledby="hardsubber-tab">
+        <input class="form-control" id="ogappID" placeholder="Opengraph.io API Key">
+        <br />
+        <input class="form-control" id="link" placeholder="Input website">
+        <div class="row">
+          <div class="form-check col">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputWebsite" checked>
+              <label class="form-check-label" for="inputWebsite">Website</label>
+          </div>
+          <div class="form-check col">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputTwitter">
+              <label class="form-check-label" for="inputTwitter">Twitter</label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputYT">
+            <label class="form-check-label" for="inputYT">YouTube</label>
+          </div>
+          <div class="form-check col">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputJisho">
+            <label class="form-check-label" for="inputYT">Jisho</label>
+          </div>
+        </div>
+        <button onclick="cite()" id="citeButton" class="btn btn-primary mb-3">Get command</button>
+        <textarea id="result" class="form-control" rows="3" placeholder="Command goes here"></textarea>
+        <button onclick="copy()" id="copyButton" class="btn btn-primary mb-3">Copy</button>
+      </div>
+
+    </div>
+  
+  </div>
+
+  <!--FOOTER-->
+  <div style="bottom: 15px;text-align: center;width: 100%">Back to <a href="https://vtd.mdkj.dev/">VTuber Dictionary</a>.
+  </div>
+  <script>
+    document.getElementById('link').onkeypress = function(e){
+    if (!e) e = window.event;
+    if (e.keyCode == '13'){
+      cite();
+      return false;
+    }
+  }
+  </script>
+</body>
+</html>
