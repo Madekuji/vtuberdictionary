@@ -4,7 +4,7 @@ title: 'About'
 ---
 VTuber Dictionary is a website that tries to compile all the common and not-so-common terms that are used by the VTuber community, as well as sharing their origins and where those terms came from.
 
-The website is accessible from **<vtd.mdkj.dev>**.
+The website is accessible from **<https://vtd.mdkj.dev>**.
 
 The dictionary is developed by **[Madekuji-san](https://mdkj.dev/)**.
 
